@@ -1,9 +1,9 @@
-FireZenk-s-ProgressBar
+FireZenk's ProgressBar
 ======================
 
 A highly customizable progress bar
 
-USEGE:
+USAGE:
 ----------------------
 
 1- Add FireZenk's ProgressBar to your project has a library
