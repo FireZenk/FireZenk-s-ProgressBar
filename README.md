@@ -3,6 +3,8 @@ FireZenk's ProgressBar
 
 A highly customizable progress bar
 
+Live demo: [YouTube video](http://www.youtube.com/watch?v=naWjI9C7Z6w)
+
 USAGE:
 ----------------------
 
