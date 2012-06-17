@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <TextView android:text="@string/test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    
+    <com.firezenk.progressbar.FZProgressBar 
+        android:id="@+id/fancyBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+    
+    <TextView android:text="@string/test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    
+    <com.firezenk.progressbar.FZProgressBar 
+        android:id="@+id/fancyBar2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+    
+    <TextView android:text="@string/test3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    
+    <com.firezenk.progressbar.FZProgressBar 
+        android:id="@+id/fancyBar3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+    
+    <TextView android:text="@string/test4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+    
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        
+	    <com.firezenk.progressbar.FZProgressBar 
+	        android:id="@+id/fancyBar4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"/>
+	    
+	    <com.firezenk.progressbar.FZProgressBar 
+	        android:id="@+id/fancyBar5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"/>
+	    
+	    <com.firezenk.progressbar.FZProgressBar 
+	        android:id="@+id/fancyBar6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"/>
+	    
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+	    
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:layout_weight="1" />
+    
+    </LinearLayout>
+
+</LinearLayout>

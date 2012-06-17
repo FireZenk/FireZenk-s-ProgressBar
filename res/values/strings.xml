@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FireZenk\'s ProgressBar</string>
+    
+	<string name="test1">Test one:</string>
+	<string name="test2">Test two:</string>
+	<string name="test3">Test three:</string>
+	<string name="test4">Test four:</string>
+	<string name="button">Animate</string>
+	<string name="button2">Stop</string>
+</resources>
