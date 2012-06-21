@@ -29,7 +29,7 @@ import android.widget.LinearLayout;
 
 public class FZProgressBar extends LinearLayout {
 
-	public enum Mode {DETERMINATE, INDETERMINATE};
+	public enum Mode {ONESHOT, DETERMINATE, INDETERMINATE};
 	
 	private LinearLayout bar;
 	private LinearLayout limits;
@@ -181,7 +181,7 @@ public class FZProgressBar extends LinearLayout {
 				else {
 					animation.removeCallbacks(this);
 					switch (mode) {
-						case DETERMINATE:
+						case ONESHOT:
 							bar.setVisibility(View.INVISIBLE);
 							break;
 						case INDETERMINATE:
@@ -198,7 +198,13 @@ public class FZProgressBar extends LinearLayout {
 		gd.setCornerRadius(BAR_CORNER);
 		bar.setBackgroundDrawable(gd);
 		
-		animation.post(basic_one);
+		if(mode == Mode.DETERMINATE) {
+			LinearLayout.LayoutParams params = 
+					new LinearLayout.LayoutParams(bar.getWidth()+ANIMATION_SPACING, BAR_SIZE_H);
+			bar.setLayoutParams(params);
+	 	} else {
+			animation.post(basic_one);
+		}
 	}
 	
 	public synchronized void animation_stop() {
@@ -206,7 +212,15 @@ public class FZProgressBar extends LinearLayout {
 		animation.removeCallbacks(basic_two);
 		animation.removeCallbacks(basic_three);
 		animation.removeCallbacks(basic_four);
-		bar.setVisibility(View.INVISIBLE);
+		LinearLayout.LayoutParams params = 
+				new LinearLayout.LayoutParams(0, BAR_SIZE_H);
+		bar.setLayoutParams(params);
+	}
+	
+	public synchronized void animation_stop(final Mode mode) {
+		LinearLayout.LayoutParams params = 
+				new LinearLayout.LayoutParams(0, BAR_SIZE_H);
+		bar.setLayoutParams(params);
 	}
 
 }

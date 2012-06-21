@@ -20,10 +20,13 @@
 
     <string name="app_name">FireZenk\'s ProgressBar</string>
     
-	<string name="test1">Test one:</string>
-	<string name="test2">Test two:</string>
-	<string name="test3">Test three:</string>
-	<string name="test4">Test four:</string>
+	<string name="test1">Test one: INDETERMINATE</string>
+	<string name="test2">Test two: ONESHOT</string>
+	<string name="test3">Test three: ONESHOT</string>
+	<string name="test4">Test four: INDETERMINATE 3 bars</string>
+	<string name="test5">Test five: DETERMINATE</string>
 	<string name="button">Animate</string>
 	<string name="button2">Stop</string>
+	<string name="button3">+</string>
+	<string name="button4">Reset</string>
 </resources>

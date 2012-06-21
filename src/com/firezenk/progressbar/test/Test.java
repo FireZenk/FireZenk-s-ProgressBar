@@ -83,14 +83,22 @@ public class Test extends Activity {
         int[] colors6 = {Color.CYAN, Color.TRANSPARENT};
         mBar6.bar_config(40, 160, 0, Color.LTGRAY, colors6);
         
+        //Retrieve the third progress bar
+        final FZProgressBar mBar7 = (FZProgressBar) findViewById(R.id.fancyBar7);
+        
+        //Configure the third progress bar
+        mBar7.animation_config(2, 20);
+        int[] colors7 = {Color.RED, Color.TRANSPARENT};
+        mBar7.bar_config(20, 0, 20, Color.LTGRAY, colors7);
+        
         Button b1 = (Button)findViewById(R.id.button1);
         b1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				//Start the animation of the progress bars assigning them their mode
 				mBar1.animation_start(Mode.INDETERMINATE);
-				mBar2.animation_start(Mode.DETERMINATE);
-				mBar3.animation_start(Mode.DETERMINATE);
+				mBar2.animation_start(Mode.ONESHOT);
+				mBar3.animation_start(Mode.ONESHOT);
 				mBar4.animation_start(Mode.INDETERMINATE);
 				mBar5.animation_start(Mode.INDETERMINATE);
 				mBar6.animation_start(Mode.INDETERMINATE);
@@ -110,6 +118,25 @@ public class Test extends Activity {
 				mBar6.animation_stop();
 			}
 		});
+        
+        Button b3 = (Button)findViewById(R.id.button3);
+        b3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Increases spacing size to the progress bar
+				mBar7.animation_start(Mode.DETERMINATE);
+			}
+		});
+        
+        Button b4 = (Button)findViewById(R.id.button4);
+        b4.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Reset the animation of progress bar
+				mBar7.animation_stop();
+			}
+		});
+        
     }
     
 }
