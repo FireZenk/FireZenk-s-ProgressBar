@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Firezenk's ProgressBar : A highly customizable progress bar for Android" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Firezenk's ProgressBar</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/FireZenk/FireZenk-s-ProgressBar">View on GitHub</a>
+
+          <h1 id="project_title">Firezenk's ProgressBar</h1>
+          <h2 id="project_tagline">A highly customizable progress bar for Android</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/FireZenk/FireZenk-s-ProgressBar/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/FireZenk/FireZenk-s-ProgressBar/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>DEMO:</h1>
+
+<hr><p>Live demo: <a href="http://www.youtube.com/watch?v=naWjI9C7Z6w">YouTube video</a></p>
+
+<h1>USAGE:</h1>
+
+<hr><p>1- Add FireZenk's ProgressBar to your project has a library</p>
+
+<p>2- Add the progress bar on your xml layout for example:</p>
+
+<pre><code>&lt;com.firezenk.progressbar.FZProgressBar 
+      android:id="@+id/myProgressBar"
+      android:layout_width="fill_parent"
+      android:layout_height="1dp" /&gt;
+</code></pre>
+
+<p>3- In your code:</p>
+
+<p>__ 3.1- Import the progress bar:</p>
+
+<pre><code>import com.firezenk.progressbar.FZProgressBar;
+import com.firezenk.progressbar.FZProgressBar.Mode;
+</code></pre>
+
+<p>__ 3.2- Retrieve the element:</p>
+
+<pre><code>FZProgressBar mBar = (FZProgressBar) findViewById(R.id.myProgressBar);
+</code></pre>
+
+<p>__ 3.3- Customize the progress bar:</p>
+
+<pre><code>mBar.animation_config(int delay, int spacing);
+mBar.bar_config(
+     int height, int width, int radius, 
+     int background_color, int[] progress_colors);
+</code></pre>
+
+<p>__ 3.4- Start/stop the progress animation:</p>
+
+<pre><code>mBar.animation_start(Mode mode);
+mBar.animation_stop();
+</code></pre>
+
+<p>4- Enjoy!</p>
+
+<h2>LICENSE:</h2>
+
+<pre><code>FireZenk's Progress Bar &lt;A highly customizable progress bar&gt;
+Copyright (C) 2012 Jorge Garrido Oval (aka: FireZenk)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Firezenk's ProgressBar maintained by <a href="https://github.com/FireZenk">FireZenk</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
